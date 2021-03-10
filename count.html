@@ -3,11 +3,17 @@
     <head lang="en">
         <script>
          let counter = 0;
+         let x = 10;
          function count(){
              counter = counter + 1 ;
              document.querySelector('h1').innerHTML = counter ;
+             
+             if(counter==x){
+             alert('You counted ' + x + ' times');
+             x = x + 10;
          }
-         
+         }
+          
         </script>
     </head>
     <body>
